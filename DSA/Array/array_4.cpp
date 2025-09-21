@@ -11,7 +11,7 @@ bool isSorted(int arr[] ,int n){
     }
   }
 
-  return true;
+  return true
 }
 
 int main() {
