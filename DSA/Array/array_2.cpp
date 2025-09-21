@@ -20,5 +20,5 @@ int main() {
     int  max = findLargestElement(arr1,n);
     cout << "The Largest Element in the array is: " << max <<endl;
  
-    return 0 
+    return 0 ;
 }
