@@ -17,7 +17,7 @@ int main() {
     int arr1[] = {2,-5,1,3,0};
     int n = 5;
 
-    int  max = findLargestElement(arr1,n)
+    int  max = findLargestElement(arr1,n);
     cout << "The Largest Element in the array is: " << max <<endl;
  
     return 0 ;
