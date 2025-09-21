@@ -11,7 +11,7 @@ int findLargestElement(int arr[],int n ){
             max = arr[i];
         }
     }
-    return max;
+    return max
 }
 int main() {
     int arr1[] = {2,-5,1,3,0};
