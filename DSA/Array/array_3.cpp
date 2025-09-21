@@ -54,5 +54,5 @@ int main()
     int arr[]={1,2,4,6,7,5};
     int n=sizeof(arr)/sizeof(arr[0]);
     getElements(arr,n);
-    return 0
+    return 0;
 }
