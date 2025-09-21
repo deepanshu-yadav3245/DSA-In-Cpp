@@ -1,0 +1,52 @@
+Question 1 :--Why Use Oop:--
+
+Object- Oriented Programming (OOP) is used in  C++ because 
+It allow for more organized, reusable, and maintainable code by structuring program around real-world Object
+
+Key benefits of using OOP in C++:
+1) code Reusability 
+2) Modularity :- Breaking down  program into smaller manageable object 
+3) Encapsulation:
+4) Abstraction
+5) Polymorphism
+
+Question 2 :-- Why we use Getter and Setter in CPP
+
+In CPP you use getter and setter to control access to private member variable of class.
+1) Data Protection.
+2) Abstraction.
+3) Validation.
+
+Question 3 :-- What is Constructor in CPP
+
+A constructor is member function of class which initialize object of class in C++.
+Constructor is automatically called when Object(instance of class) is created.
+It is special member Function Of the class.
+
+Question 3.1 :-- How constructor are different from a normal member function.
+1) A Constructor has same name as the class itself.
+2) Constructor don't have return type
+3) A constructor is automatically called when an object is created.
+
+Types of constructor.
+1) Default:-        Does not take any arguments  it has no parameter.
+2) Parameterized :- It is possible to pass argument to constructor. 
+3) Copy:-            A copy constructor is member function which initialize an object using another object of the same class.
+
+
+Question 4:  this Pointer.
+this is a special pointer in C++ that points to the current object.
+
+Question 5: Destructor ?
+A destructor is a special member function that is called automatically when an object goes out of scope or when we delete the object with the delete expression.
+
+In C++, a destructor has the same name as that of the class, and it does not have a return type.  precedes the identifier to indicate destructor. 
+
+class  Wall {
+  public:
+    // create a destructor
+    ~Wall() {
+      // code
+    }
+};
+

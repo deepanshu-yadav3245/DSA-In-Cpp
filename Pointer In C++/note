@@ -1,0 +1,20 @@
+What is pointer in CPP.
+
+Special variable that store address of other variables.
+
+Pointers are symbolic representations of addresses. 
+They enable programs to simulate call-by-reference as well as to create and manipulate dynamic data structures. 
+Iterating over elements in arrays or other data structures is one of the main use of pointers. 
+
+Syntax:
+
+datatype *var_name; 
+int *ptr;   // ptr can point to an address which holds int data
+
+Example: How to create Pointer
+
+int a = 10;
+int *ptr = & a; //create a pointer
+
+float price  = 123.45;
+float *ptr = & price; // create a pointer
