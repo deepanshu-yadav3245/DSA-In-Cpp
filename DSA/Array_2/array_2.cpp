@@ -20,7 +20,7 @@ void leftRotate(int arr[] ,int n, int d){
      
      for(int i = n-d; i < n; i++ )
      {
-        arr[i] = temp[i-(n-d)];
+        arr[i] = temp[i-(n-d)]
      }
 
 }
