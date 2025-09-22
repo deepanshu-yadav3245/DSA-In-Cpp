@@ -31,7 +31,7 @@ int main(){
     cout << "Before rotation: " << endl;
     for(int i = 0; i < n; i++){
         cin >>  arr[i] ;
-    
+    }
 
     int d;
     cin >> d;
