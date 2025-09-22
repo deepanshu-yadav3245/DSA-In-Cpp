@@ -19,5 +19,5 @@ int main(){
     cout << "The array after removing duplicate element is: " << endl;
     for (int i = 0; i < k; i++){
         cout << arr[i] << " ";
-    }
+    
 }
