@@ -17,5 +17,5 @@ int findMaxConsecutiveOnes(vector<int>& nums){
             cnt =0;
         }
     }
-    return maxi;
+    return maxi
 };
