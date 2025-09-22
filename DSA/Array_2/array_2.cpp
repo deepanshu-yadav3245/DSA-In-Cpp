@@ -24,7 +24,14 @@ void leftRotate(int arr[] ,int n, int d){
      }
 
 }
-
+int main(){
+    int n;
+    cin >> n; 
+    int arr[n];
+    cout << "Before rotation: " << endl;
+    for(int i = 0; i < n; i++){
+        cin >>  arr[i] ;
+    }
 
     int d;
     cin >> d;
