@@ -1,25 +1,25 @@
-// (3) nested if statements.
+// // (3) nested if statements.
 
-#include<iostream>
-using namespace std;
-int main () {
-	int age;
-	cout << "How old are you? ";
-	cin >> age;
+// #include<iostream>
+// using namespace std;
+// int main () {
+// 	int age;
+// 	cout << "How old are you? ";
+// 	cin >> age;
 
-	if(age > 16) {
-		cout << "You are an adult! /n";
-		// Nested if statement.
-		if(age < 18){
-			cout << "But you cannot enlist!";
-        }
-	}
-	else {
-		cout << "You are not yet an adult! ";
-	}
-	cout << "Because you are " << age << " years";
-   return 0;
-}
+// 	if(age > 16) {
+// 		cout << "You are an adult! /n";
+// 		// Nested if statement.
+// 		if(age < 18){
+// 			cout << "But you cannot enlist!";
+//         }
+// 	}
+// 	else {
+// 		cout << "You are not yet an adult! ";
+// 	}
+// 	cout << "Because you are " << age << " years";
+//    return 0;
+// }
 
 
 // Switch statement.
@@ -58,21 +58,21 @@ int main () {
 
 
 
-//  Practice Queation 1
-#include<iostream>
-using namespace std;
+// //  Practice Queation 1
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    char chr;
+// int main(){
+//     char chr;
 
-    cout << "Enter the Character :";
-    cin >> chr;
+//     cout << "Enter the Character :";
+//     cin >> chr;
 
-    if(chr >= 'a' && chr <= 'z'){
-        cout << "lowercase";
-    }else{
-        cout << "uppercase";
-    }
-    return 0;
-}
+//     if(chr >= 'a' && chr <= 'z'){
+//         cout << "lowercase";
+//     }else{
+//         cout << "uppercase";
+//     }
+//     return 0;
+// }
 
