@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Aspire7/OneDrive/Desktop/C++ Program/DSA/Array_2",
-      "program": "c:/Users/Aspire7/OneDrive/Desktop/C++ Program/DSA/Array_2/build/Debug/outDebug",
+      "cwd": "c:/Users/Aspire7/OneDrive/Desktop/C++ Program/DSA/Array",
+      "program": "c:/Users/Aspire7/OneDrive/Desktop/C++ Program/DSA/Array/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
