@@ -1,43 +1,58 @@
+// Second Largest Element Of An array..
 
-// Move all Zeros to end of the array.
+// (Brute Force) [this approach only works if there are no duplicates]
 
-#include <bits/stdc++.h>
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// void getElements(int arr[],int n)
+// {
+//     if(n==0 || n==1)
+//         cout<<-1<<" "<<-1<<endl;  // edge case when only one element is present in array
+//     sort(arr,arr+n);
+//     int small=arr[1];
+//     int large=arr[n-2];
+//     cout<<"Second smallest is "<<small<<endl;
+//     cout<<"Second largest is "<<large<<endl;
+// }
+// int main()
+// {
+//     int arr[]={1,2,4,6,7,5};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     getElements(arr,n);
+//     return 0;
+// }
+
+// Better Approach.
+#include<bits/stdc++.h>
 using namespace std;
-
-vector<int> moveZeros(int n, vector<int> a) {
-    int j = -1;
-    //place the pointer j:
-    for (int i = 0; i < n; i++) {
-        if (a[i] == 0) {
-            j = i;
-            break;
-        }
+void getElements(int arr[],int n)
+{
+    if(n==0 || n==1)
+        cout<<-1<<" "<<-1<<endl;  // edge case when only one element is present in array
+    int small=INT_MAX,second_small=INT_MAX;
+    int large=INT_MIN,second_large=INT_MIN;
+    int i;
+    for(i=0;i<n;i++)
+    {
+        small=min(small,arr[i]);
+        large=max(large,arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(arr[i]<second_small && arr[i]!=small)
+            second_small=arr[i];
+        if(arr[i]>second_large && arr[i]!=large)
+            second_large=arr[i];
     }
 
-    //no non-zero elements:
-    if (j == -1) return a;
-
-    //Move the pointers i and j
-    //and swap accordingly:
-    for (int i = j + 1; i < n; i++) {
-        if (a[i] != 0) {
-            swap(a[i], a[j]);
-            j++;
-        }
-    }
-    return a;
+    cout<<"Second smallest is "<<second_small<<endl;
+    cout<<"Second largest is "<<second_large<<endl;
 }
-
-
 int main()
 {
-    vector<int> arr = {1, 0, 2, 3, 2, 0, 0, 4, 5, 1};
-    int n = 10;
-    vector<int> ans = moveZeros(n, arr);
-    for (auto &it : ans) {
-        cout << it << " ";
-    }
-    cout << '\n';
+    int arr[]={1,2,4,6,7,5};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    getElements(arr,n);
     return 0;
 }
-

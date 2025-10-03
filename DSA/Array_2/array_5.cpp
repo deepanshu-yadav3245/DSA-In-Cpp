@@ -1,29 +1,23 @@
-// Find a missing number....--> [1,2,4,5] in this array 3 is a missing number.
-
-#include<iostream>
+// Remove the duplicate.
+#include<bits/stdc++.h>
 using namespace std;
 
-int missingNumber(int arr[], int N){
-    for(int i = 1; i <= N; i++){
-      int flag = 0;
-        for(int j = 0; j < N-1; j++){
-            if (arr[j] == i)
-            {
-                flag = 1;
-                break;
-            }
+int removeDuplicates(int arr[], int n){
+    int i =0;
+    for(int j = 1; j < n; j++){
+        if(arr[i] != arr[j]){
+            i++;
+            arr[i] = arr[j];
         }
-        if (flag == 0)
-        return i;
     }
-    return -1;
+    return i + 1;
 }
 int main(){
-    int N = 5;
-    int arr[N] = {1,2,4,5};
-    int ans = missingNumber(arr,N);
-    cout << "The Missing Number is: " << ans << endl;
-    return 0; 
-
+    int arr[] = {10,23,10,34,23,89,34,67,89,67};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int k = removeDuplicates(arr,n);
+    cout << "The array after removing duplicate element is: " << endl;
+    for (int i = 0; i < k; i++){
+        cout << arr[i] << " ";
+    }
 }
-
