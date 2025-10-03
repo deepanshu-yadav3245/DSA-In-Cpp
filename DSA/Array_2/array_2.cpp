@@ -1,45 +1,24 @@
-// Given an array with N Elements, the task is to rotate the array to left by K steps, where K is non Negative.
- 
+// Largest element of array....
+
+// Optimal Solution. not  bruteforce Solution...
 #include <bits/stdc++.h>
-#include <iostream> 
 using namespace std;
 
-void leftRotate(int arr[] ,int n, int d){
-    d = d % n;
-
-    int temp[d];
-    for(int i = 0; i < d; i++)
-    {
-        temp[i] = arr[i];
-    }
-
-    for(int i = d; i < n; i++)
-     {
-        arr[i-d] = arr[i];
-     }
-     
-     for(int i = n-d; i < n; i++ )
-     {
-        arr[i] = temp[i-(n-d)];
-     }
-
-}
-int main(){
-    int n;
-    cin >> n; 
-    int arr[n];
-    cout << "Before rotation: " << endl;
+int findLargestElement(int arr[],int n ){
+    int max = arr[0];
     for(int i = 0; i < n; i++){
-        cin >>  arr[i] ;
+        if(max < arr[i] ){
+            max = arr[i];
+        }
     }
+    return max;
+}
+int main() {
+    int arr1[] = {2,-5,1,3,0};
+    int n = 5;
 
-    int d;
-    cin >> d;
-    leftRotate(arr,n,d);
-    cout << "After rotation: " << endl;
-    for(int i = 0; i<n; i++){
-        cout << arr[i] << " ";
-    }
-
+    int  max = findLargestElement(arr1,n);
+    cout << "The Largest Element in the array is: " << max <<endl;
+ 
     return 0 ;
 }
