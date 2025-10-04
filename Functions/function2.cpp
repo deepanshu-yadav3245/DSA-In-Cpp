@@ -23,28 +23,28 @@ int main() {
 }
 
 
-// Calculate sum of digits of a Number.
+Calculate sum of digits of a Number.
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int sumOfDigit(int num){
-//    int digSum = 0;
+int sumOfDigit(int num){
+   int digSum = 0;
 
-//    while(num > 0){
-//       int lastDig = num % 10;
-//       num /= 10;
+   while(num > 0){
+      int lastDig = num % 10;
+      num /= 10;
 
-//       digSum += lastDig;
-//    }
-//    return digSum;
+      digSum += lastDig;
+   }
+   return digSum;
 
 
-// }
-// int main() {
-//    cout << "Sum = " <<sumOfDigit(2323) << endl;
-//    cout << "Sum = " <<sumOfDigit (23456789) <<endl;
+}
+int main() {
+   cout << "Sum = " <<sumOfDigit(2323) << endl;
+   cout << "Sum = " <<sumOfDigit (23456789) <<endl;
 
-//    return 0;
-// }
+   return 0;
+}
 
