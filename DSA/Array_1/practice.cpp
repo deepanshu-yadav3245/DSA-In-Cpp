@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-void countZeroOne(int arr[] , int size) {
+void countZeroOne(int arr[] , int size){
     int zeroCount = 0;
     int oneCount = 0;
 
