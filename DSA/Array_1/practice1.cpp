@@ -1,4 +1,4 @@
-//  Find min no of array.
+//  Find minimum Number of an array.
 
 #include <iostream>
 #include <limits.h>
