@@ -12,7 +12,7 @@
 //         cout << "Enter the value of index " << i << ": " ;
 //         cin >> arr[i];
 //         cout << endl;
-       
+
 //     }
 
 //     // Printing An Array
@@ -34,10 +34,10 @@ int main() {
     int arr[10];
     int n = 5;
     for(int i = 0; i < n; i++){
-        cout << "Enter the value of index " << i << ": " ;
+        cout << "Enter the value of index: " << i << ": " ;
         cin >> arr[i];
     }
-    cout << "Printing the Araay in double of my input:" << endl;
+    cout << "Print The Araay in Double of My Input:" << endl;
     for(int i = 0; i < n ; i++){
         arr[i] = 2 * arr[i];
         cout << arr[i] << " ";
